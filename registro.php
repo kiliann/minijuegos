@@ -11,8 +11,9 @@ $metodos = new Metodos();
 </head>
 <body>
 <h1>Resgistro</h1>
+<?php if(!isset($_POST['enviar'])){ ?>
 <div>
-    <form action="" method="post">
+    <form action="registro.php" method="post">
         <label>Nombre</label>
         <input name="nombre" type="text" placeholder="Nombre"><br/>
         <label> Correo </label>
@@ -29,6 +30,10 @@ $metodos = new Metodos();
 
     </form>
 </div>
+<?php
+}else{
 
+
+}?>
 </body>
 </html>

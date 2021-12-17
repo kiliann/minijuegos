@@ -18,4 +18,14 @@ class Metodos{
         }
     }
 
+    function altaUsuario($nombre, $correo, $password){
+        $insercion = "INSERT INTO usuario( nombre, correo, contrasena) VALUES ('$nombre','$correo','$password')";
+
+        if($this->conexion->consultas($insercion)){
+            echo "Se realizo conrrectamente el registro";
+        }else{
+            $this->conexion->errno();
+        }
+    }
+
 }
