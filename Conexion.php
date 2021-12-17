@@ -16,7 +16,7 @@ class Conexion{
     }
 
     public function extraerFila($resultado){
-        return $this->fila =fetch_array($resultado);
+        return $this->fila =$resultado->fetch_array();
     }
     public function consultasMultiple($consulta){
 

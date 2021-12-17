@@ -1,3 +1,8 @@
+<?php
+require_once 'Metodos.php';
+$metodos = new Metodos();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +21,10 @@
         <input name="password" type="password" placeholder="Contraseña"><br/>
         <label>Repita la Contraseña</label>
         <input name="rpassword" type="password" placeholder="Contraseña"><br/>
+        <label>Videojuego que prefieres</label><br/>
+        <?php
+        $metodos->mostrarJuegos();
+        ?>
         <input name="enviar" type="submit" value="Enviar">
 
     </form>
