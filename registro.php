@@ -32,7 +32,13 @@ $metodos = new Metodos();
 </div>
 <?php
 }else{
+    if (isset($_POST['enviar'])){
+        if ($_POST['passwoerd']==$_POST['rpassword']){
 
+        }else{
+            echo "Introduce una contraseña correcta";
+        }
+    }
 
 }?>
 </body>
