@@ -22,6 +22,16 @@ class Conexion{
 
         $this->resultado=$this->mysqli->multi_query($consulta);
     }
+    public function  filasAfectadas(){
+         return $this->mysqli->affected_rows;
+
+
+    }
+    public function  numeroFilas($resultado){
+        return $numeroFilas = $resultado->num_rows;
+
+
+    }
 
     public function error(){
 

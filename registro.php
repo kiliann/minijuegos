@@ -33,7 +33,12 @@ $metodos = new Metodos();
 <?php
 }else{
     if (isset($_POST['enviar'])){
-        if ($_POST['passwoerd']==$_POST['rpassword']){
+        if ($_POST['password']==$_POST['rpassword']){
+            if(!empty($_POST['cbox'])){
+                $metodos->altaUsuario($_POST['nombre'],$_POST['correo'], $_POST['password'], $_POST['cbox']);
+            }else{
+                echo "Selecione las preferencias";
+            }
 
         }else{
             echo "Introduce una contraseña correcta";
