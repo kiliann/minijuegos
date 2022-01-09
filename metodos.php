@@ -14,7 +14,7 @@ class Metodos{
         $resultado = $this->conexion->consultas($consulta);
 
         while ($fila = $this->conexion->extraerFila($resultado)){
-           echo '<label><input type="checkbox" name="cbox[]" value="'.$fila['idMinijuegos'].'">'.$fila['nombre'].'</label><br>';
+           echo '<input type="checkbox" name="cbox[]" class="check-box" value="'.$fila['idMinijuegos'].'"><span>'.$fila['nombre'].'</span><br/>';
         }
     }
     //Aqui realizamos el alta de usuario
