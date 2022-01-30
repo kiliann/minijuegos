@@ -17,3 +17,5 @@ function logined(){
     btn.style.left = "0";
 
 }
+
+addEventListener('DOMContentLoaded', logined, true);

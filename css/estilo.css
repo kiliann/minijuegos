@@ -10,15 +10,19 @@
     background-position: center;
     background-size: cover;
     position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .form-box{
     width: 380px;
     height: 480px;
+
     margin: 6% auto;
     background: aliceblue;
     padding: 5px;
     overflow: hidden;
+    position: absolute;
 }
 .botones{
     width: 220px;
